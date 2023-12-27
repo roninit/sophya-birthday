@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Birthday Present but </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            text-align: center;
+            background-color: #f8f8f8;
+            padding: 50px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff8c94;
+        }
+
+        .gift-image {
+            max-width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .popup img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .close-button {
+            background-color: #ff8c94;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .close-button:hover {
+            background-color: #ff6f78;
+        }
+
+
+
+
+
+    </style>
+
+    <style>
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .picture1 {
+            width: 200px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Your Birthday Present don't open it until you read what in down 🎁</h1>
+    <img src="img/istockphoto-1128262881-612x612.jpg" alt="Your Gift" class="gift-image" onclick="showPopup()">
+</div>
+
+<div id="popup" class="popup" class="picture1">
+    <img src="img/2023_12_26_21_37_IMG_1978.PNG" alt="Present Window">
+    <button class="close-button" onclick="closePopup()">Close</button>
+</div>
+
+
+<div class="card">
+    <h1>🎉 Happy Birthday, Sophia! 🎂</h1>
+    <p>Dear Sophia,</p>
+    <p>On this special day​🤗​, I want to express how grateful I am to have you in my life. Your presence brings joy and happiness💖, and your smile lights up my world🌕.</p>
+    <p>May this year be filled with incredible moments, exciting adventures, and all the love you truly deserve.</p>
+    <p>Wishing you a day as beautiful and amazing as you are❤️!</p>
+    <p><span class="heart">❤️</span> Love, Your bunny <span class="heart">❤️</span></p>
+    <div class="footer">🌟​ i cant wait to celebrate your birthday toghater🌟​</div>
+</div>
+
+
+
+
+
+<script>
+    function showPopup() {
+        document.getElementById('popup').style.display = 'block';
+    }
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
